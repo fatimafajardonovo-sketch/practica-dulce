@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SugarByte</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!--Comienza header-->
+  <header class="site-header" id="inicio">
+    <a class="brand" href="#inicio" aria-label="SugarByte, inicio">
+      <span class="brand-mark" aria-hidden="true">S</span>
+      <span>Sugar<span class="brand-accent">Byte</span></span>
+    </a>
+
+    <nav class="main-nav" aria-label="Navegación principal">
+      <a href="#inicio">Inicio</a>
+      <a href="#gomitas">Gomitas</a>
+      <a href="#chocolates">Chocolates</a>
+      <a href="#packs-regalo">Packs Regalo</a>
+    </nav>
+  </header>
+<!-- Fin header-->
+<!--Comienza la parte del hero-->
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-content">
+        <p class="hero-eyebrow">Un mundo de pequeños caprichos</p>
+        <h1 id="hero-title">Tu dosis diaria <span>de azúcar</span></h1>
+        <p class="hero-description">
+          Gomitas, chocolates y tus antojos favoritos, reunidos en una caja
+          hecha a tu manera.
+        </p>
+        <a class="hero-cta" href="#gomitas">
+          Armar mi caja de dulces
+          <span aria-hidden="true">→</span>
+        </a>
+        <p class="hero-note">Elige tus favoritos. Nosotros ponemos la magia.</p>
+      </div>
+
+      <div class="hero-art" aria-hidden="true">
+        <span class="hero-sparkle sparkle-one">✦</span>
+        <span class="hero-sparkle sparkle-two">✦</span>
+        <div class="candy-orbit orbit-one"></div>
+        <div class="candy-orbit orbit-two"></div>
+        <div class="candy-piece candy-gummy">🍬</div>
+        <div class="candy-piece candy-lollipop">🍭</div>
+        <div class="candy-piece candy-chocolate">🍫</div>
+        <div class="hero-sticker">100%<br>antojo</div>
+      </div>
+    </section>
+<!-- Fin section hero-->
+<!-- Comienza la section de mas vendidos-->
+    <section class="bestsellers" id="gomitas" aria-labelledby="bestsellers-title">
+      <div class="section-heading">
+        <p class="section-eyebrow">Los favoritos de la semana</p>
+        <h2 id="bestsellers-title">Más <span>vendidos</span></h2>
+        <p>Un éxito dulce, elijas lo que elijas.</p>
+      </div>
+
+      <div class="products-grid">
+        <article class="product-card">
+          <div class="product-art product-art-pink" aria-hidden="true">
+            <span class="product-emoji">🐻</span>
+            <span class="product-badge">Vegano</span>
+          </div>
+          <div class="product-info">
+            <p class="product-category">Gomitas · 150 g</p>
+            <h3>Ositos arcoíris</h3>
+            <p class="product-price">3,50 €</p>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-art product-art-yellow" aria-hidden="true">
+            <span class="product-emoji">🍉</span>
+            <span class="product-badge">Ácido</span>
+          </div>
+          <div class="product-info">
+            <p class="product-category">Gomitas · 120 g</p>
+            <h3>Cintas de sandía</h3>
+            <p class="product-price">2,90 €</p>
+          </div>
+        </article>
+
+        <article class="product-card" id="chocolates">
+          <div class="product-art product-art-lilac" aria-hidden="true">
+            <span class="product-emoji">🍫</span>
+            <span class="product-badge">Artesanal</span>
+          </div>
+          <div class="product-info">
+            <p class="product-category">Chocolate · 180 g</p>
+            <h3>Trufas de cacao</h3>
+            <p class="product-price">5,50 €</p>
+          </div>
+        </article>
+
+        <article class="product-card" id="packs-regalo">
+          <div class="product-art product-art-orange" aria-hidden="true">
+            <span class="product-emoji">🍡</span>
+            <span class="product-badge">Importado</span>
+          </div>
+          <div class="product-info">
+            <p class="product-category">Pack regalo · 200 g</p>
+            <h3>Mix sorpresa japonés</h3>
+            <p class="product-price">6,90 €</p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+  <!--Inicio footer-->
+  <footer class="site-footer">
+    <div class="footer-main">
+      <div class="footer-brand">
+        <a class="brand" href="#inicio" aria-label="SugarByte, inicio">
+          <span class="brand-mark" aria-hidden="true">S</span>
+          <span>Sugar<span class="brand-accent">Byte</span></span>
+        </a>
+        <p>Un pequeño capricho puede alegrarte el día.</p>
+      </div>
+
+      <section class="footer-column" aria-labelledby="footer-address-title">
+        <h2 id="footer-address-title">Visítanos</h2>
+        <address>Calle de los Dulces, 12<br>28012 Madrid, España</address>
+      </section>
+
+      <section class="footer-column" aria-labelledby="footer-hours-title">
+        <h2 id="footer-hours-title">Horario</h2>
+        <p>Lunes a sábado<br>10:00–20:00</p>
+        <p>Domingos<br>11:00–15:00</p>
+      </section>
+
+      <nav class="footer-column footer-social" aria-label="Redes sociales">
+        <h2>Síguenos</h2>
+        <a href="https://www.instagram.com/">Instagram</a>
+        <a href="https://www.tiktok.com/">TikTok</a>
+        <a href="https://www.facebook.com/">Facebook</a>
+      </nav>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 SugarByte. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+  <!--Fin footer-->
+</body>
+</html>
