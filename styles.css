@@ -263,6 +263,131 @@ body {
   transform: rotate(10deg);
 }
 
+.bestsellers {
+  padding: 82px clamp(24px, 8vw, 116px) 100px;
+  background: #fff;
+}
+
+.section-heading {
+  margin: 0 auto 38px;
+  text-align: center;
+}
+
+.section-eyebrow {
+  margin: 0 0 10px;
+  color: #b94a78;
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.section-heading h2 {
+  margin: 0;
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: clamp(2.4rem, 5vw, 3.5rem);
+  letter-spacing: -0.06em;
+}
+
+.section-heading h2 span {
+  color: #f45b91;
+}
+
+.section-heading > p:last-child {
+  margin: 12px 0 0;
+  color: #746879;
+}
+
+.products-grid {
+  display: grid;
+  max-width: 1200px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 22px;
+  margin: 0 auto;
+}
+
+.product-card {
+  overflow: hidden;
+  border: 1px solid #f1e8ef;
+  border-radius: 22px;
+  background: #fff;
+  box-shadow: 0 8px 24px rgb(50 27 61 / 5%);
+  transition: box-shadow 180ms ease, transform 180ms ease;
+}
+
+.product-card:hover {
+  box-shadow: 0 16px 32px rgb(50 27 61 / 11%);
+  transform: translateY(-4px);
+}
+
+.product-art {
+  position: relative;
+  display: grid;
+  min-height: 190px;
+  place-items: center;
+}
+
+.product-art-pink {
+  background: #ffe4ed;
+}
+
+.product-art-yellow {
+  background: #fff0c8;
+}
+
+.product-art-lilac {
+  background: #eee5fa;
+}
+
+.product-art-orange {
+  background: #ffe8d9;
+}
+
+.product-emoji {
+  font-size: 5rem;
+  filter: drop-shadow(0 8px 6px rgb(50 27 61 / 12%));
+  transition: transform 180ms ease;
+}
+
+.product-card:hover .product-emoji {
+  transform: scale(1.08) rotate(-4deg);
+}
+
+.product-badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  padding: 7px 11px;
+  border-radius: 999px;
+  background: #fff;
+  color: #6b3a68;
+  font-size: 0.72rem;
+  font-weight: 800;
+}
+
+.product-info {
+  padding: 18px 20px 20px;
+}
+
+.product-category {
+  margin: 0 0 7px;
+  color: #837687;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.product-info h3 {
+  margin: 0;
+  font-size: 1.08rem;
+}
+
+.product-price {
+  margin: 14px 0 0;
+  color: #b94a78;
+  font-size: 1.1rem;
+  font-weight: 900;
+}
+
 @media (max-width: 600px) {
   .site-header {
     align-items: flex-start;
@@ -327,5 +452,37 @@ body {
     width: 74px;
     height: 74px;
     font-size: 0.75rem;
+  }
+
+  .bestsellers {
+    padding: 62px 20px 72px;
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+  }
+
+  .product-art {
+    min-height: 145px;
+  }
+
+  .product-emoji {
+    font-size: 4rem;
+  }
+
+  .product-badge {
+    top: 10px;
+    left: 10px;
+    padding: 6px 9px;
+    font-size: 0.67rem;
+  }
+
+  .product-info {
+    padding: 15px 14px 16px;
+  }
+
+  .product-info h3 {
+    font-size: 0.98rem;
   }
 }

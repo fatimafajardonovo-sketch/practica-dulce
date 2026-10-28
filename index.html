@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!--Comienza header-->
   <header class="site-header" id="inicio">
     <a class="brand" href="#inicio" aria-label="SugarByte, inicio">
       <span class="brand-mark" aria-hidden="true">S</span>
@@ -20,7 +21,8 @@
       <a href="#packs-regalo">Packs Regalo</a>
     </nav>
   </header>
-
+<!-- Fin header-->
+<!--Comienza la parte del hero-->
   <main>
     <section class="hero" aria-labelledby="hero-title">
       <div class="hero-content">
@@ -46,6 +48,65 @@
         <div class="candy-piece candy-lollipop">🍭</div>
         <div class="candy-piece candy-chocolate">🍫</div>
         <div class="hero-sticker">100%<br>antojo</div>
+      </div>
+    </section>
+<!-- Fin section hero-->
+<!-- Comienza la section de mas vendidos-->
+    <section class="bestsellers" id="gomitas" aria-labelledby="bestsellers-title">
+      <div class="section-heading">
+        <p class="section-eyebrow">Los favoritos de la semana</p>
+        <h2 id="bestsellers-title">Más <span>vendidos</span></h2>
+        <p>Un éxito dulce, elijas lo que elijas.</p>
+      </div>
+
+      <div class="products-grid">
+        <article class="product-card">
+          <div class="product-art product-art-pink" aria-hidden="true">
+            <span class="product-emoji">🐻</span>
+            <span class="product-badge">Vegano</span>
+          </div>
+          <div class="product-info">
+            <p class="product-category">Gomitas · 150 g</p>
+            <h3>Ositos arcoíris</h3>
+            <p class="product-price">3,50 €</p>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-art product-art-yellow" aria-hidden="true">
+            <span class="product-emoji">🍉</span>
+            <span class="product-badge">Ácido</span>
+          </div>
+          <div class="product-info">
+            <p class="product-category">Gomitas · 120 g</p>
+            <h3>Cintas de sandía</h3>
+            <p class="product-price">2,90 €</p>
+          </div>
+        </article>
+
+        <article class="product-card" id="chocolates">
+          <div class="product-art product-art-lilac" aria-hidden="true">
+            <span class="product-emoji">🍫</span>
+            <span class="product-badge">Artesanal</span>
+          </div>
+          <div class="product-info">
+            <p class="product-category">Chocolate · 180 g</p>
+            <h3>Trufas de cacao</h3>
+            <p class="product-price">5,50 €</p>
+          </div>
+        </article>
+
+        <article class="product-card" id="packs-regalo">
+          <div class="product-art product-art-orange" aria-hidden="true">
+            <span class="product-emoji">🍡</span>
+            <span class="product-badge">Importado</span>
+          </div>
+          <div class="product-info">
+            <p class="product-category">Pack regalo · 200 g</p>
+            <h3>Mix sorpresa japonés</h3>
+            <p class="product-price">6,90 €</p>
+          </div>
+        </article>
       </div>
     </section>
   </main>
