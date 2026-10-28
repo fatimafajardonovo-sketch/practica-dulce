@@ -66,6 +66,203 @@ body {
   color: #f45b91;
 }
 
+.hero {
+  position: relative;
+  display: grid;
+  min-height: min(680px, calc(100vh - 82px));
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 0.9fr);
+  align-items: center;
+  gap: clamp(32px, 7vw, 100px);
+  overflow: hidden;
+  padding: 70px clamp(24px, 10vw, 150px) 90px;
+  background:
+    radial-gradient(ellipse at 82% 50%, #ffe1ec 0, #ffe1ec 29%, transparent 29.2%),
+    #fff9ed;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 590px;
+}
+
+.hero-eyebrow {
+  margin: 0 0 20px;
+  color: #b94a78;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  margin: 0;
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: clamp(3.2rem, 6.5vw, 5.8rem);
+  font-weight: 800;
+  letter-spacing: -0.075em;
+  line-height: 0.98;
+}
+
+.hero h1 span {
+  display: block;
+  color: #f45b91;
+}
+
+.hero-description {
+  max-width: 440px;
+  margin: 24px 0 30px;
+  color: #665a68;
+  font-size: clamp(1rem, 1.5vw, 1.15rem);
+  line-height: 1.7;
+}
+
+.hero-cta {
+  display: inline-flex;
+  min-height: 56px;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  padding: 0 25px;
+  border-radius: 999px;
+  background: #321b3d;
+  box-shadow: 0 10px 24px rgb(50 27 61 / 18%);
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 800;
+  text-decoration: none;
+  transition: background 160ms ease, transform 160ms ease;
+}
+
+.hero-cta:hover,
+.hero-cta:focus-visible {
+  background: #f45b91;
+  transform: translateY(-2px);
+}
+
+.hero-cta span {
+  font-size: 1.25rem;
+}
+
+.hero-note {
+  margin: 16px 0 0;
+  color: #857b87;
+  font-size: 0.78rem;
+}
+
+.hero-art {
+  position: relative;
+  display: grid;
+  width: min(100%, 440px);
+  aspect-ratio: 1;
+  justify-self: center;
+  place-items: center;
+}
+
+.hero-art::before {
+  position: absolute;
+  width: 68%;
+  height: 68%;
+  border: 2px dashed rgb(244 91 145 / 34%);
+  border-radius: 50%;
+  content: "";
+}
+
+.candy-orbit {
+  position: absolute;
+  border-radius: 50%;
+  background: #f9b849;
+}
+
+.orbit-one {
+  top: 16%;
+  left: 20%;
+  width: 17px;
+  height: 17px;
+}
+
+.orbit-two {
+  right: 16%;
+  bottom: 23%;
+  width: 11px;
+  height: 11px;
+  background: #a884d6;
+}
+
+.candy-piece {
+  position: absolute;
+  display: grid;
+  width: 118px;
+  height: 118px;
+  place-items: center;
+  border: 8px solid #fff9ed;
+  border-radius: 35px;
+  box-shadow: 0 16px 35px rgb(50 27 61 / 14%);
+  font-size: 3.8rem;
+}
+
+.candy-gummy {
+  z-index: 1;
+  top: 17%;
+  left: 20%;
+  background: #ffb6ca;
+  transform: rotate(-13deg);
+}
+
+.candy-lollipop {
+  z-index: 2;
+  top: 30%;
+  right: 13%;
+  background: #f9c95e;
+  transform: rotate(12deg);
+}
+
+.candy-chocolate {
+  z-index: 1;
+  bottom: 15%;
+  left: 35%;
+  background: #b9a2df;
+  transform: rotate(-6deg);
+}
+
+.hero-sparkle {
+  position: absolute;
+  color: #f45b91;
+  font-size: 2rem;
+}
+
+.sparkle-one {
+  top: 10%;
+  right: 28%;
+}
+
+.sparkle-two {
+  bottom: 18%;
+  left: 15%;
+  color: #f9b849;
+  font-size: 1.5rem;
+}
+
+.hero-sticker {
+  position: absolute;
+  z-index: 3;
+  right: 8%;
+  bottom: 16%;
+  display: grid;
+  width: 88px;
+  height: 88px;
+  align-content: center;
+  border: 4px solid #fff9ed;
+  border-radius: 50%;
+  background: #f45b91;
+  color: #fff;
+  font-size: 0.88rem;
+  font-weight: 900;
+  line-height: 1.15;
+  text-align: center;
+  transform: rotate(10deg);
+}
+
 @media (max-width: 600px) {
   .site-header {
     align-items: flex-start;
@@ -94,5 +291,41 @@ body {
   .main-nav a {
     font-size: 0.82rem;
     white-space: nowrap;
+  }
+
+  .hero {
+    min-height: auto;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 56px 24px 48px;
+    background:
+      radial-gradient(ellipse at 50% 88%, #ffe1ec 0, #ffe1ec 36%, transparent 36.2%),
+      #fff9ed;
+  }
+
+  .hero h1 {
+    font-size: clamp(3.25rem, 15vw, 4.5rem);
+  }
+
+  .hero-description {
+    margin-top: 20px;
+  }
+
+  .hero-art {
+    width: min(100%, 340px);
+  }
+
+  .candy-piece {
+    width: 96px;
+    height: 96px;
+    border-width: 6px;
+    border-radius: 29px;
+    font-size: 3.1rem;
+  }
+
+  .hero-sticker {
+    width: 74px;
+    height: 74px;
+    font-size: 0.75rem;
   }
 }
