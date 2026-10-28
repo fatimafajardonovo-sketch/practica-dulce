@@ -387,6 +387,83 @@ body {
   font-size: 1.1rem;
   font-weight: 900;
 }
+/* Inicio footer */
+.site-footer {
+  padding: 58px clamp(24px, 8vw, 116px) 20px;
+  background: #321b3d;
+  color: #fff;
+}
+
+.footer-main {
+  display: grid;
+  max-width: 1200px;
+  grid-template-columns: 1.5fr repeat(3, 1fr);
+  gap: 42px;
+  margin: 0 auto;
+  padding-bottom: 42px;
+}
+
+.site-footer .brand {
+  color: #fff;
+}
+
+.footer-brand > p,
+.footer-column p,
+.footer-column address {
+  margin: 15px 0 0;
+  color: #d7cbdc;
+  font-size: 0.88rem;
+  font-style: normal;
+  line-height: 1.8;
+}
+
+.footer-column h2 {
+  margin: 4px 0 16px;
+  color: #fff;
+  font-size: 0.95rem;
+}
+
+.footer-column p + p {
+  margin-top: 8px;
+}
+
+.footer-social {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-social h2 {
+  margin-bottom: 6px;
+}
+
+.footer-social a {
+  color: #d7cbdc;
+  font-size: 0.88rem;
+  text-decoration: none;
+  transition: color 160ms ease;
+}
+
+.footer-social a:hover,
+.footer-social a:focus-visible {
+  color: #ff9fbe;
+}
+
+.footer-bottom {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 18px;
+  border-top: 1px solid rgb(255 255 255 / 16%);
+  color: #bbaec2;
+  font-size: 0.78rem;
+  text-align: center;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+/* Fin footer */
 
 @media (max-width: 600px) {
   .site-header {
@@ -484,5 +561,19 @@ body {
 
   .product-info h3 {
     font-size: 0.98rem;
+  }
+
+  .site-footer {
+    padding: 46px 24px 18px;
+  }
+
+  .footer-main {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 32px 22px;
+    padding-bottom: 32px;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
   }
 }
